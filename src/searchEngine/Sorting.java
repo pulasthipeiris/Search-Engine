@@ -2,7 +2,7 @@ package searchEngine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map.Entry; // You may need it to implement fastSort
+import java.util.Map.Entry; 
 
 public class Sorting {
 
@@ -117,7 +117,6 @@ public class Sorting {
 	}
 
     public static <K, V extends Comparable> ArrayList<K> fastSort(HashMap<K, V> results) {
-    	// ADD YOUR CODE HERE
 
 		if(results.isEmpty()){
 			return null;
