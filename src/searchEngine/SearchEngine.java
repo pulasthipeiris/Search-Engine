@@ -19,10 +19,8 @@ public class SearchEngine {
 	 * For each new page seen, it updates the wordIndex, the web graph,
 	 * and the set of visited vertices.
 	 * 
-	 * 	This method will fit in about 30-50 lines (or less)
 	 */
 	public void crawlAndIndex(String url) throws Exception {
-		// TODO : RECURSIVE DFS
 		
 		//UPDATING WEB GRAPH
 		
@@ -92,15 +90,11 @@ public class SearchEngine {
 	 * This computes the pageRanks for every vertex in the web graph.
 	 * It will only be called after the graph has been constructed using
 	 * crawlAndIndex(). 
-	 * To implement this method, refer to the algorithm described in the 
-	 * assignment pdf. 
 	 * 
-	 * This method will probably fit in about 30 lines.
 	 */
 	
 	
 	public void assignPageRanks(double epsilon) {
-		// TODO : Add code here
 		
 		/*
 		 * Good web pages have: 
@@ -161,7 +155,6 @@ public class SearchEngine {
 	 */
 		
 	public ArrayList<Double> computeRanks(ArrayList<String> vertices) {
-		// TODO : Add code here
 		
 		ArrayList<Double> pageRanks = new ArrayList<Double>();
 		
@@ -190,7 +183,6 @@ public class SearchEngine {
 	/* Returns a list of urls containing the query, ordered by rank
 	 * Returns an empty list if no web site contains the query.
 	 * 
-	 * This method should take about 25 lines of code.
 	 */
 	public ArrayList<String> getResults(String query) {
 		// TODO: Add code here
